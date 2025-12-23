@@ -1,5 +1,5 @@
-def call( string repourl, string branchname) {
-  git url: repourl, branch:branchname
-  echo "clonned ${repourl} on branch ${branchname}"
+def call(string repourl, string branch:main) {
+  git url: repourl, branch:branch
+  echo "clonned ${repourl} on branch ${branch}"
 }
   
